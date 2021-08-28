@@ -9,7 +9,9 @@ _Makes your development server configurably slower so you can mimic real product
 #
 ![](django-snail-logo.png)
 
+#### Rationale
 
+_I was missing a simple way to slow down my development server when working on frontend JavaScript to be able to see/debug loading animations and see how the code works when it's not in its full speed. That's why I created this simple module._
 ## Installation
 
 First you need to install the module using `pip`:
