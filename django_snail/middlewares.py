@@ -28,7 +28,7 @@ class DjangoSnailException(Exception):
     pass
 
 class SnailRule:
-    def __init__(self, match_url, match_headers, ms_min, ms_max):
+    def __init__(self, match_url=None, match_headers=None, ms_min=None, ms_max=None):
         self.match_url = match_url
         self.match_headers = match_headers
         self.ms_min = ms_min
