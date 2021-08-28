@@ -92,4 +92,4 @@ class SnailMiddleware:
             elif val_split.__len__() == 2:
                 return int(val_split[0]), int(val_split[1])
             raise InvalidSnailThrottleMsRangeHeader(
-                f"Invalid InvalidSnailThrottleMsRangeHeader header value: '{raw_request_val}'")
+                f"Invalid SnailThrottleMsRangeHeader header value: '{raw_request_val}'")
