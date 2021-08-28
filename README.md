@@ -1,5 +1,5 @@
 # Django Snail (Middleware)
-#
+<br/>
 
 _Makes your development server configurably slower so you can mimic real production speeds._
 
@@ -16,7 +16,7 @@ First you need to install the module using `pip`:
 
 `pip install django-snail`
 
-Then add it's middleware to `settings.MIDDLEWARE`
+Then add the middleware to `settings.MIDDLEWARE`
 
 
 #### settings.py
@@ -38,6 +38,8 @@ To configure the throttling server-side, you need to instantiate `SnailRule` cla
 rules (the first one only is applied)
 
 ```
+from django_snail import SnailRule
+
 api_v1_500ms = SnailRule(match_url='/api/v1/', ms_min=500, ms_max=500, match_headers=None)
 api_v2_200ms_to_600ms = SnailRule(match_url'/api/v2/', ms_min=200, ms_max=600, match_headers=None)
 
@@ -47,10 +49,10 @@ content_type_application_json = SnailRule(match_headers=content_type_application
 SNAIL_RULES = [api_v1_500ms, api_v2_200ms_to_600ms, content_type_application_json]
 ```
 
-Yup, that's it.
-#
+And that's it. 
+<br/>
 
-#### On Demand throttling (Client-side)
+#### On-Demand throttling (Client-side)
 
 All the requests that are to be throttled need to contain `SnailThrottleMsRange` header.
 The value can be either one integer or two integers separated by comma. 
