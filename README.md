@@ -6,8 +6,10 @@ _Makes your development server configurably slower so you can mimic real product
 - Choose which requests will be throttled
 - Choose the time (in miliseconds) of throttling
 - Configurable from both sides; Server (Django settings) and Client (on-demand) (Special request headers)
-
 #
+![](django-snail-logo.png)
+
+
 ## Installation
 
 First you need to install the module using `pip`:
