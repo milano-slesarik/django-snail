@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class DrfXiosConfig(AppConfig):
+class DjangoSnailConfig(AppConfig):
     name = 'django_snail'
