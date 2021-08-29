@@ -51,8 +51,9 @@ class SnailRule:
             if not (pattern.search(url)):
                 return False
         if self.match_headers:
-            if not self.match_headers == request.headers:
-                return False
+            for key,val in self.match_headers.items():
+                if not (key in request.headers.keys() and val == request.headers[key]):
+                    return False
         return True
 
     @property
