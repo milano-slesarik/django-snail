@@ -43,7 +43,7 @@ rules (the first one only is applied)
 from django_snail import SnailRule
 
 api_v1_500ms = SnailRule(match_url='/api/v1/', ms_min=500, ms_max=500, match_headers=None)
-api_v2_200ms_to_600ms = SnailRule(match_url'/api/v2/', ms_min=200, ms_max=600, match_headers=None)
+api_v2_200ms_to_600ms = SnailRule(match_url='/api/v2/', ms_min=200, ms_max=600, match_headers=None)
 
 content_type_application_json_header = {'Content-Type':'application/json'}
 content_type_application_json = SnailRule(match_headers=content_type_application_json_header, ms_min=200, ms_max=600)
