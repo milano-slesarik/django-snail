@@ -16,7 +16,9 @@ _I was missing a simple way to slow down my development server when working on f
 
 First you need to install the module using `pip`:
 
-`pip install django-snail`
+
+~~pip install django-snail~~ # 
+_!!! not working yet_
 
 Then add the middleware to `settings.MIDDLEWARE`
 
